@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> ระบบงาน INTRANET  </title> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />   
+    <link rel="icon" type="image/x-icon" href="images/logo.png"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" /> 
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/> 
+
+	
+	
+</head>
+<body> 
+	<header class="fixed-top" > 
+		<nav class="navbar navbar-expand-xl">
+			<div class="container">
+				<div class="d-flex flex-grow-1"> 
+					<a class="navbar-brand" href="#">
+						<img src="images/LOGO.png" alt="logo">   
+						ระบบงาน <br> <span>INTRANET</span>
+					</a>  
+					<button class="navbar-toggler btn-menu" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+						<img src="images/icon-nav.png" alt="">
+					</button>  
+				</div>
+				<div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+					<ul class="navbar-nav ml-auto flex-nowrap"> 
+						<li class="nav-item active">
+							<a href="#" class="nav-link">หน้าแรก</a>
+						</li>   
+						<li class="nav-item">
+							<a href="#" class="nav-link">หนังสือเวียน</a>
+						</li> 
+						<li class="nav-item">
+							<a href="#" class="nav-link">แชร์ไฟล์ </a>
+						</li> 
+						<li class="nav-item">
+							<a href="#" class="nav-link">ข่าวประชาสัมพันธ์</a>
+						</li> 
+						<li class="nav-item">
+							<a href="#" class="nav-link">เว็บลิงก์</a>
+						</li> 
+						<li class="nav-item">
+							<a href="#" class="nav-link">จองทรัพยากร</a>
+						</li>  
+						<li class="nav-item">
+							<a href="#" class="download"><img src="images/manual-book 1.png" alt="ดาวน์โหลดคู่มือ" >  ดาวน์โหลดคู่มือ</a>
+						</li>  
+						<li class="nav-item">
+							<a href="#" class="btn btn-regis">สมัครสมาชิก</a>
+						</li>  
+						<li class="nav-item">
+							<a href="#" class="btn btn-login">เข้าสู่ระบบ</a>
+						</li>  
+					</ul>
+				</div>
+			</div> 
+		</nav>
+	</header>
+
+
+	<main> 
+		<section class="sec1">
+			<div class="container">
+				<div class="row">
+				</div> 
+			 
+			</div>
+		</section>
+		<section class="calendar-event">
+			<div class="container"> 
+				<h1 class="h1b">ปฏิทินกิจกรรม</h1>
+				<div class="row calendar-main"> 
+					<div class="col-xl-3 p-0">
+						<div class="form-group search">
+							<form> 
+								<input type="text" class="form-control" placeholder="ค้นหากิจกรรม...">
+								<img src="images/search.png" alt="">
+								<button type="submit" class="btn"><img src="images/arrow-bar-to-left.png" alt="" ></button>
+							</form>
+						</div>
+						<div class="date"></div>
+						<div class="filtter">
+							<h5>ตัวกรอง</h5> 
+
+							<div class="custom-control custom-checkbox my-1 mr-sm-2">
+								<input type="checkbox" class="custom-control-input custom1" id="customControlInline1" checked>
+								<label class="custom-control-label" for="customControlInline1">
+									อบรม
+								</label>
+							</div>
+							<div class="custom-control custom-checkbox my-1 mr-sm-2">
+								<input type="checkbox" class="custom-control-input custom2" id="customControlInline2" checked>
+								<label class="custom-control-label" for="customControlInline2">
+									ประชุม
+								</label>
+							</div>
+							<div class="custom-control custom-checkbox my-1 mr-sm-2">
+								<input type="checkbox" class="custom-control-input custom3" id="customControlInline3" checked>
+								<label class="custom-control-label" for="customControlInline3">
+									กิจกรรม
+								</label>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-xl-9"> 
+						<div id="calendar"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sec-press">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-12"> 
+						<h1 class="h1b">ข่าวประชาสัมพันธ์</h1>
+					</div>
+					<div class="col-xl-6 col-12 text-right"> 
+						<a href="#" class="btn btn-read">ดูทั้งหมด <img src="images/Path.png" alt="ดูทั้งหมด" class="ml-3"></a>
+					</div>
+				</div> 
+				<div class="row">
+					<div class="col-xl-5 col-12">
+						<a href="#">
+							<div class="main-press">
+								<div class="img">
+									<img src="images/image-8.png" alt="">
+								</div>
+								<div class="des"> 
+									<h3  >ดิจิทัลไอดี อยู่ใกล้ตัวแค่ปลายนิ้ว การใช้ชุดข้อมูลต่างๆ ไม่ว่าจะเป็น เบอร์โทรศัพท์ ลายนิ้วมือ
+										14 กุมภาพันธ์ 2565
+									</h3>
+									<h6>
+										<img src="images/calendar-event.png" alt="calendar"> 14 กุมภาพันธ์ 2565
+									 
+									</h6>
+									<div class="icon">
+										<img src="images/photo.png" alt=""> 
+										<img src="images/video.png" alt="">
+									</div> 
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-1">&nbsp;</div>
+					<div class="col-xl-6 col-12">
+						<a href="#">
+							<div class="sub-press"> 
+								<img src="images/ss1.png" alt="" class="img"> 
+								<div class="des"> 
+									<div>
+										<h4>เว็บไซต์ DG Learning Portal</h4>
+										<h6	h6><img src="images/calendar-event.png" alt="calendar"> 14 กุมภาพันธ์ 2565</h6>
+									</div>
+								</div>
+									
+								<div class="icon">
+									<img src="images/photo.png" alt=""> 
+									<img src="images/video.png" alt="">
+								</div>
+							</div>
+						</a>
+						<a href="#">
+							<div class="sub-press"> 
+								<img src="images/ss2.png" alt="" class="img"> 
+								<div class="des"> 
+									<div>
+										<h4>WAENING แก๊ง CALL CENTER ระบาด รูปแบบการหลอกลวง</h4>
+										<h6	h6><img src="images/calendar-event.png" alt="calendar"> 14 กุมภาพันธ์ 2565</h6>
+									</div>
+								</div>
+									
+								<div class="icon">
+									<img src="images/photo.png" alt=""> 
+									<img src="images/video.png" alt="">
+								</div>
+							</div>
+						</a>
+						<a href="#">
+							<div class="sub-press"> 
+								<img src="images/ss3.png" alt="" class="img"> 
+								<div class="des"> 
+									<div>
+										<h4>มารู้จัก PPDAC กรอบแนวคิด ที่จะช่วยแก้ปัญหาต่างๆ ด้วย DATA</h4>
+										<h6	h6><img src="images/calendar-event.png" alt="calendar"> 14 กุมภาพันธ์ 2565</h6>
+									</div>
+								</div>
+									
+								<div class="icon">
+									<img src="images/photo.png" alt=""> 
+									<img src="images/video.png" alt="">
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sec-book">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-12"> 
+						<h1 class="h1b">หนังสือเวียน</h1>
+					</div>
+					<div class="col-xl-6 col-12 text-right"> 
+						<a href="#" class="btn btn-read">ดูทั้งหมด <img src="images/Path.png" alt="ดูทั้งหมด" class="ml-3"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-6 col-12">
+						<a href="#">
+							<div class="book">
+								<h5>พม 0201/11495 <span>15/11/2565</span> </h5>
+								<img src="images/paper1.png" alt="paper"> 
+								<h3>รายงานผลการสำรวจควมผูกพันของข้าราชการพลเรือนสามัญประจำปีงบประมาณ พ.ศ. 2565</h3> 
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-12">
+						<a href="#">
+							<div class="book">
+								<h5>พม 0201/11495 <span>15/11/2565</span> </h5>
+								<img src="images/paper1.png" alt="paper"> 
+								<h3>รายงานผลการสำรวจควมผูกพันของข้าราชการพลเรือนสามัญประจำปีงบประมาณ พ.ศ. 2565</h3> 
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-12">
+						<a href="#">
+							<div class="book">
+								<h5>พม 0201/11495 <span>15/11/2565</span> </h5>
+								<img src="images/paper1.png" alt="paper"> 
+								<h3>รายงานผลการสำรวจควมผูกพันของข้าราชการพลเรือนสามัญประจำปีงบประมาณ พ.ศ. 2565</h3> 
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-12">
+						<a href="#">
+							<div class="book">
+								<h5>พม 0201/11495 <span>15/11/2565</span> </h5>
+								<img src="images/paper1.png" alt="paper"> 
+								<h3>รายงานผลการสำรวจควมผูกพันของข้าราชการพลเรือนสามัญประจำปีงบประมาณ พ.ศ. 2565</h3> 
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-12">
+						<a href="#">
+							<div class="book">
+								<h5>พม 0201/11495 <span>15/11/2565</span> </h5>
+								<img src="images/paper1.png" alt="paper"> 
+								<h3>รายงานผลการสำรวจควมผูกพันของข้าราชการพลเรือนสามัญประจำปีงบประมาณ พ.ศ. 2565</h3> 
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-12">
+						<a href="#">
+							<div class="book">
+								<h5>พม 0201/11495 <span>15/11/2565</span> </h5>
+								<img src="images/paper1.png" alt="paper"> 
+								<h3>รายงานผลการสำรวจควมผูกพันของข้าราชการพลเรือนสามัญประจำปีงบประมาณ พ.ศ. 2565</h3> 
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sec-book">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-12"> 
+						<h1 class="h1b">แชร์ไฟล์</h1>
+					</div>
+					<div class="col-xl-6 col-12 text-right"> 
+						<a href="#" class="btn btn-read">ดูทั้งหมด <img src="images/Path.png" alt="ดูทั้งหมด" class="ml-3"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-6 col-12">
+						<a href="#">
+							<div class="book">
+								<h5>สำนักงานปลัดกระทรวง(สป) > 0209-กองยุทธศาสตร์และแผนงาน <span>15/11/2565</span> </h5>
+								<img src="images/paper2.png" alt="paper"> 
+								<h3>รายงานสถานการณ์และการปฏิบัติการข่าวสารประจำวันเสาร์ที่ ๑๑ กุมภาพันธ์ ๒๕๖๖</h3> 
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-12">
+						<a href="#">
+							<div class="book">
+								<h5>สำนักงานปลัดกระทรวง(สป) > 0209-กองยุทธศาสตร์และแผนงาน <span>15/11/2565</span> </h5>
+								<img src="images/paper2.png" alt="paper"> 
+								<h3>รายงานสถานการณ์และการปฏิบัติการข่าวสารประจำวันเสาร์ที่ ๑๑ กุมภาพันธ์ ๒๕๖๖</h3> 
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-12">
+						<a href="#">
+							<div class="book">
+								<h5>สำนักงานปลัดกระทรวง(สป) > 0209-กองยุทธศาสตร์และแผนงาน <span>15/11/2565</span> </h5>
+								<img src="images/paper2.png" alt="paper"> 
+								<h3>รายงานสถานการณ์และการปฏิบัติการข่าวสารประจำวันเสาร์ที่ ๑๑ กุมภาพันธ์ ๒๕๖๖</h3> 
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-12">
+						<a href="#">
+							<div class="book">
+								<h5>สำนักงานปลัดกระทรวง(สป) > 0209-กองยุทธศาสตร์และแผนงาน <span>15/11/2565</span> </h5>
+								<img src="images/paper2.png" alt="paper"> 
+								<h3>รายงานสถานการณ์และการปฏิบัติการข่าวสารประจำวันเสาร์ที่ ๑๑ กุมภาพันธ์ ๒๕๖๖</h3> 
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-12">
+						<a href="#">
+							<div class="book">
+								<h5>สำนักงานปลัดกระทรวง(สป) > 0209-กองยุทธศาสตร์และแผนงาน <span>15/11/2565</span> </h5>
+								<img src="images/paper2.png" alt="paper"> 
+								<h3>รายงานสถานการณ์และการปฏิบัติการข่าวสารประจำวันเสาร์ที่ ๑๑ กุมภาพันธ์ ๒๕๖๖</h3> 
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-12">
+						<a href="#">
+							<div class="book">
+								<h5>สำนักงานปลัดกระทรวง(สป) > 0209-กองยุทธศาสตร์และแผนงาน <span>15/11/2565</span> </h5>
+								<img src="images/paper2.png" alt="paper"> 
+								<h3>รายงานสถานการณ์และการปฏิบัติการข่าวสารประจำวันเสาร์ที่ ๑๑ กุมภาพันธ์ ๒๕๖๖</h3> 
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+ 
+	</main>
+
+	 
+	<footer> 
+		<div class="top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 fotdata"> 
+						<img src="images/logo2.png" alt="กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์">
+						<h4> กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์ </h4>
+						<h5>
+							
+							เลขที่ 1034 ถนนกรุงเกษม แขวงมหานาค เขตป้อมปราบศัตรูพ่าย <br> กรุงเทพมหานคร 10100
+						</h5>
+					</div>
+					<div class="col-xl-6 ft-social">
+						<a href="#">
+							<img src="images/bi_line.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/akar-icons_facebook-fill.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/fa-brands_twitter.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/ant-design_instagram-filled.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<div class="bot">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6">
+						สงวนลิขสิทธิ 2556 - 2566 กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์
+					</div>
+					<div class="col-xl-6 text-right">
+						<a href="#" class="mr-3">นโยบายความเป็นส่วนตัว </a>
+						<a href="#">นโยบายความมั่นคงปลอดภัยเว็บไซต์ </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+ 
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.js"></script>  
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"  ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"  ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"  ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.js"  ></script>
+ 
+	<script> 
+		$('.date').datepicker({
+			clearBtn: false,
+			language: "th",
+			calendarWeeks: false,
+			autoclose: true,
+			todayHighlight: true,
+			format: 'dd/mm/yyyy',
+			toggleActive: true
+		});
+ 
+ 
+	</script>
+ 
+</body>
+</html>
