@@ -88,7 +88,7 @@
 								<span><img src="images/g2.jpg" alt=""  ></span>
 							</div> 
 							<div>
-								<span><img src="images/g3.jpg" alt=""  ></span>
+								<span><img src="images/g1.jpg" alt=""  ></span>
 							</div> 
 							<div>
 								<span><img src="images/g1.jpg" alt=""  ></span>
@@ -159,7 +159,7 @@
 						<a href="#">
 							<div class="main-press">
 								<div class="img">
-									<img src="images/image-8.png" alt="">
+									<img src="images/image-8.png" alt="" class="img-fluid d-block m-auto">
 								</div>
 								<div class="des"> 
 									<h3  >ดิจิทัลไอดี อยู่ใกล้ตัวแค่ปลายนิ้ว การใช้ชุดข้อมูลต่างๆ ไม่ว่าจะเป็น เบอร์โทรศัพท์ ลายนิ้วมือ
@@ -232,7 +232,7 @@
 			</div>
 		</section>
 
-		<section class="sec-book">
+		<section class="sec-book book-top">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-6 col-12"> 
@@ -504,8 +504,27 @@
 				$('.slick-slide[data-slick-index="2"]').addClass('gt2');
 			})
 			.slick({
-			centerMode: true,
+			centerMode: true,  dots: true,
+
 			centerPadding: 0,
+			responsive: [
+				{
+				breakpoint: 768,
+				settings: {
+					arrows: false,
+					centerMode: true, 
+					slidesToShow: 1
+				}
+				},
+				{
+				breakpoint: 480,
+				settings: {
+					arrows: false,
+					centerMode: true, 
+					slidesToShow: 1
+				}
+				}
+			],
 			slidesToShow: 3
 			}).on('beforeChange', (event, slick, current, next) => {
 			$('.slick-slide.gt2').removeClass('gt2');
