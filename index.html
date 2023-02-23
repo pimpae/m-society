@@ -104,13 +104,14 @@
 		<section class="calendar-event">
 			<div class="container"> 
 				<h1 class="h1b">ปฏิทินกิจกรรม</h1>
-				<div class="row calendar-main"> 
+				<div class="row calendar-main active"> 
+					<button type="button" class="btn calendar-show"><img src="images/arrow-bar-to-left.png" alt="" ></button>
 					<div class="col-xl-3 p-0">
 						<div class="form-group search">
 							<form> 
 								<input type="text" class="form-control" placeholder="ค้นหากิจกรรม...">
 								<img src="images/search.png" alt="">
-								<button type="submit" class="btn"><img src="images/arrow-bar-to-left.png" alt="" ></button>
+								<button type="button" class="btn calendar-hide"><img src="images/arrow-bar-to-left.png" alt="" ></button>
 							</form>
 						</div>
 						<div class="date"></div>
@@ -432,6 +433,16 @@
  
 	<script> 
 		 
+		
+		$('.calendar-hide').click(function(){      
+			$(".calendar-main").removeClass("active");   
+		});
+
+		$('.calendar-show').click(function(){      
+			$(".calendar-main").addClass("active");   
+		});
+
+
 
 		$('.date').datepicker({
 			clearBtn: false,
