@@ -20,6 +20,54 @@
 	
 </head>
 <body> 
+
+	<button class="btn menu-bars pc-x"><i class="fas fa-bars"></i></button>
+	<div class="menu-mb pc-x">
+		<a class="navbar-brand" href="#">
+			<img src="images/LOGO2.png" alt="logo">   
+			
+			ระบบงาน <br> <span>INTRANET</span>
+		</a>  
+		<a class="navbar-close" href="#">
+			<i class="far fa-times"></i>
+		</a>  
+ 
+		<ul class="navbar-nav"> 
+			<li class="active">
+				<a href="#">หน้าแรก</a>
+			</li>    
+			<li>
+				<a href="#">หนังสือเวียน</a>
+			</li>   
+			<li>
+				<a href="#">แชร์ไฟล์</a>
+			</li> 
+			<li>
+				<a href="#">ข่าวประชาสัมพันธ์</a>
+			</li> 
+			<li>
+				<a href="#">เว็บลิงก์</a>
+			</li> 
+			<li>
+				<a href="#">จองทรัพยากร</a>
+			</li>  
+			<li>
+				<a href="#" class="download"><img src="images/manual-book 1.png" alt="ดาวน์โหลดคู่มือ" >  ดาวน์โหลดคู่มือ</a>
+			</li>   
+		</ul> 
+		<br>
+		<div class="row">
+			<div class="col-6"> 
+				<a href="#" class="btn btn-regis">สมัครสมาชิก</a> 
+			</div>
+			<div class="col-6"> 
+				<a href="#" class="btn btn-login">เข้าสู่ระบบ</a>
+			</div>
+		</div>
+
+	</div>
+
+
 	<header class="fixed-top" > 
 		<nav class="navbar navbar-expand-xl">
 			<div class="container">
@@ -432,7 +480,15 @@
 	<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"  ></script>  
  
 	<script> 
-		 
+		
+		
+		$('.menu-bars').click(function(){    
+			$(".menu-mb").addClass("active" , 300);  
+		});
+		$('.navbar-close').click(function(){    
+			$(".menu-mb").removeClass("active" , 300);  
+		});
+
 		
 		$('.calendar-hide').click(function(){      
 			$(".calendar-main").removeClass("active");   

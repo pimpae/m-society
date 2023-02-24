@@ -645,6 +645,89 @@ footer .bot a:hover{
   flex: 0 0 100%; 
   padding-left: 55px;
 }   
+.menu-bars{
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  font-size: 20px;
+  z-index: 1111 !important;
+  color: #2B8FE9;
+}
+
+.menu-mb{ 
+  z-index: 2222 !important;
+  position: fixed;
+  left: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: #F3F5F7;
+  background-repeat: no-repeat , no-repeat !important;
+  background-size: 285px auto , 100% !important ;
+  background-position: bottom 25px right 25px , center;
+  padding: 25px;
+}
+.menu-mb.active{
+  display: block; 
+  left: 0;
+}
+.menu-mb .navbar-brand{
+  padding-left: 80px;
+  font-family: LINESeedSansTH_A_Rg;
+  font-weight: bold;
+  font-size: 22px; 
+  color: #2B8FE9;
+}
+.menu-mb .navbar-brand img{
+  height: 60px;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
+.menu-mb .navbar-nav {
+  margin-top: 20px;
+}
+.menu-mb .navbar-nav li{
+  margin-top: 10px;
+  margin-bottom: 10px;
+} 
+.menu-mb .navbar-nav li a{
+  height: 80px;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: NotoSansThaiLooped-Regular;
+  color: #4B465C;
+  transition: .33s all ease-out; 
+}
+.menu-mb .navbar-nav li.active a{
+  color: #2B8FE9;
+}
+.menu-mb .navbar-nav li a:hover{
+  color: #2B8FE9;
+}
+.menu-mb .navbar-close{
+  position: absolute;
+  top: 30px;
+  color: #4B465C;
+  right: 30px;
+  font-size: 22px;
+}
+.menu-mb .btn-regis{
+  font-size: 15px;
+  line-height: 24px; 
+  color: #2B8FE9;
+  width: 100% !important;
+  height: 44px !important; 
+  border: 1px solid #2B8FE9;
+  border-radius: 6px;
+  margin-right: -10px;
+}
+.menu-mb .btn-login{  
+  width: 100% !important;
+  height: 44px !important;  
+}
 
 
 
@@ -969,4 +1052,20 @@ footer .bot a:hover{
   .slick-dots{
     margin-top: 20px;
   }
+}
+
+@media only screen and (min-width: 1025px) { /* PC */
+  .slick-dots{ 
+    margin-top: -200px;
+  } 
+}
+@media only screen and (min-width: 1500px) { /* PC */
+  .slick-dots{ 
+    margin-top: -150px;
+  } 
+}
+@media only screen and (min-width: 1750px) { /* PC */
+  .slick-dots{ 
+    margin-top: -50px;
+  } 
 }
