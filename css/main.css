@@ -989,6 +989,7 @@ footer .bot a:hover{
     bottom: 10px;
   }
   .sec-book {
+    margin-top: 50px !important;
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -1051,6 +1052,19 @@ footer .bot a:hover{
   } 
   .slick-dots{
     margin-top: 20px;
+  }
+  
+  .calendar-main.active > .col-xl-9{ 
+    max-width: 100% !important;
+    width: 100% !important;
+    flex: 0 0 100%; 
+    padding-left: 15px;
+  }   
+  .fc-scroller{
+    height: 100% !important; 
+  }
+  .fc-view-container{
+    margin-bottom: 20px;
   }
 }
 
